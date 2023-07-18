@@ -1,0 +1,66 @@
+.headline {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.desktop-menu {
+    text-align: center;
+    display: block;
+}
+
+.mobile-menu {
+    text-align: center;
+    display: none;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    flex: none;
+    width: 280px;
+    margin: 10px;
+    background-color: #ffcccc;
+}
+
+@media(max-width:1250px) {
+
+    /********************************************
+        If width of device smaller than 1250px,
+        use the following CSS style
+     ********************************************/
+    .list {
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 45%;
+    }
+}
+
+@media(max-width:550px) {
+
+    /********************************************
+        If width of device smaller than 550px,
+        use the following CSS style
+     ********************************************/
+    .headline {
+        font-size: 20px;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .product {
+        width: 90%;
+    }
+}
